@@ -27,7 +27,6 @@ class Book
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     #[Assert\NotBlank]
-    //#[Assert\NotEqualTo(value: '0000-00-00 00:00:00', message: 'The publication date must be a valid date')]
     private ?\DateTimeInterface $publishedAt = null;
 
     #[ORM\ManyToOne(inversedBy: 'books')]

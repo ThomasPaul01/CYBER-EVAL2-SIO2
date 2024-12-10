@@ -31,7 +31,6 @@ class BookValidatorTest extends KernelTestCase
     }
     public function testEmptyDateValidator(): void
     {
-        //$this->markTestSkipped('Savoir comment rendre une date vide');
         self::bootKernel();
         $validator = static::getContainer()->get('validator');
 
