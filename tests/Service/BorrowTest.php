@@ -14,7 +14,7 @@ class BorrowTest extends TestCase
         $book = new Book();
         $book->setTitle('The Lord of the Rings');
         $book->setPublishedAt(new \DateTime('1954-07-29'));
-        $book->setIsbn('978-3-16-148410-0');
+        $book->setIsbn('12345678912345');
 
         return $book;
     }
